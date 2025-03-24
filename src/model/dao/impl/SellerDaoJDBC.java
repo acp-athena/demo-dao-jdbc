@@ -194,7 +194,7 @@ public class SellerDaoJDBC implements SellerDao {
 			DB.closeResultSet(rs);
 		}
 	}
-
+ 
     @Override
     public List<Seller> findByDepartment(Department department) {
 		PreparedStatement st = null;
