@@ -208,7 +208,6 @@ public class SellerDaoJDBC implements SellerDao {
 					+ "ORDER BY Name");
 			
 			st.setInt(1, department.getId());
-			
 			rs = st.executeQuery();
 			
 			List<Seller> list = new ArrayList<>();
@@ -236,5 +235,4 @@ public class SellerDaoJDBC implements SellerDao {
 			DB.closeResultSet(rs);
 		}
 	}
-
 }
